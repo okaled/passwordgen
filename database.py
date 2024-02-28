@@ -20,7 +20,9 @@ def list_passwords():
     connection.close()
 
 db_create()
-
+print('Your passwords are: ')
+print()
 list_passwords()
 
+print()
 input('Press Enter to close connection...')

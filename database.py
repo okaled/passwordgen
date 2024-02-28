@@ -14,9 +14,9 @@ def list_passwords():
     connection = sqlite3.connect('passwords.db')
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM passwords")
-    senhas = cursor.fetchall()
-    for senha in senhas:
-        print(senha[0], senha[1])
+    passwords = cursor.fetchall()
+    for password in passwords:
+        print(password[0], password[1])
     connection.close()
 
 db_create()
